@@ -24,8 +24,11 @@ const id = setInterval(() => {
     const secs = Math.floor((time % (1000 * 60)) / 1000);
 
 
-    daysEl.textContent = days;
-    hoursEl.textContent = String(hours).padStart(2, '0');
-    minutesEl.textContent = String(mins).padStart(2, '0');
-    secondsEl.textContent = String(secs).padStart(2, '0');
+
+
+
+        daysEl.textContent = days;
+    hoursEl.textContent = String(hours);
+    minutesEl.textContent = String(mins);
+    secondsEl.textContent = String(secs);
 }, 1000);
